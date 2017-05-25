@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{0D582EC4-49A5-B6EF-CA07-9EA603EDBD56}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Users/goer/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Users/goer/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Editor\GoerVRTools.cs" />
+     <Compile Include="Assets\Packages\Curvy Examples\Scripts\Editor\HeightMetadataEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\BuildRasterizedPathEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\BuildShapeExtrusionEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\BuildVolumeCapsEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\BuildVolumeMeshEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\BuildVolumeSpotsEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\ConformPathEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\CreateGameObjectEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\CreateMeshEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\DebugVMeshEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\DebugVolumeEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\InputGameObjectEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\InputMeshEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\InputSplinePathEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\InputSplineShapeEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\InputSpotsEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\MixShapesEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\ModifierMixPathsEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\ModifierTRSMeshEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\ModifierTRSPathEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\ModifierTRSShapeEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Editor\NoteEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\AboutWindow.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CG\CGEditorUtility.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CG\CGGraph.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CG\CGModuleEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CG\CGResourceEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CG\CanvasSelection.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CG\CanvasState.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CG\CanvasUI.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CG\CurvyGeneratorEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CG\MetaCGOptionsEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\Components\GLCurvyRendererEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\Controllers\PathControllerEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\Controllers\SplineControllerEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\Controllers\VolumeControllerEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyConnectionEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyControllerEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyEditorBase.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyEditorUtility.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyImportExportEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyMenu.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyProject.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyPropertyDrawers.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyShapeEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvySplineAlignWizard.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvySplineEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvySplineGroupEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvySplineSegmentEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyStyles.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyToolbar.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\CurvyUISplineEditor.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\Wizards\CurvySplineExportWizard.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\Wizards\ImportExportWizard.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\Wizards\ModuleWizard.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\Wizards\ShapeWizard.cs" />
+     <Compile Include="Assets\Packages\Curvy\Base\Editor\Wizards\TemplateWizard.cs" />
+     <Compile Include="Assets\Packages\DevTools\Components\Editor\ComponentPoolEditor.cs" />
+     <Compile Include="Assets\Packages\DevTools\Components\Editor\PoolManagerEditor.cs" />
+     <Compile Include="Assets\Packages\DevTools\Components\Editor\PrefabPoolEditor.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\ClipboardHandler.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DT.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTDebugWindow.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTEditor.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTEditorClasses.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTEditorUtility.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTGUI.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTHandles.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTLayerUtility.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTProject.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTResource.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTSceneView.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTSelection.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTStatusbar.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTStyles.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTToolbar.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\DTToolbarItem.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\EditorData.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\EditorKeyDefinition.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\Extensions\EditorExtensions.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\PropertyDrawers.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\ToolbarItemTypes\DTToolbarButton.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\ToolbarItemTypes\DTToolbarRadioButton.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\ToolbarItemTypes\DTToolbarRadioOffButton.cs" />
+     <Compile Include="Assets\Packages\DevTools\Editor\ToolbarItemTypes\DTToolbarToggleButton.cs" />
+     <Compile Include="Assets\PicoVRSDK\Editor\AndriodBuilSetting.cs" />
+     <Compile Include="Assets\PicoVRSDK\Editor\PicoVRManagerEditor.cs" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Packages\Curvy\link.xml" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Shaders\HardsurfaceTriplanarPacked.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Shaders\ParticleAdditiveFresnel.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\PicoVRSDK\Scenes\Examples\Resources\Undistortion.shader" />
+     <None Include="Assets\Packages\Curvy\Base\ClassTemplates\CGModuleTemplate.txt" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Packages\Curvy\Base\ClassTemplates\ShapeTemplate.txt" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\PicoVRSDK\Resources\Undistortion.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Packages\Curvy\ReadMe.txt" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\PicoVRSDK\Scenes\Examples\Resources\FillColor.shader" />
+     <None Include="Assets\Packages\Curvy\Base\ClassTemplates\CGModuleEditorTemplate.txt" />
+     <None Include="Assets\PicoVRSDK\Resources\FillColor.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.PlaymodeTestsRunner">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="CurvyEditorIcons">
+ <HintPath>D:/MarkWorking/Working/NuoYaTest/Assets/Packages/Curvy/Base/Editor/Resources/CurvyEditorIcons.dll</HintPath>
+ </Reference>
+ <Reference Include="LibTessDotNet">
+ <HintPath>D:/MarkWorking/Working/NuoYaTest/Assets/Packages/Curvy/Base/ThirdParty/LibTessDotNet.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>D:/MarkWorking/Working/NuoYaTest/Assets/Plugins/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Users/goer/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{DC51E8D8-1BF3-8BFE-ABBB-270BC097BB4E}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
